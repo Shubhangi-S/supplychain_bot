@@ -12,8 +12,6 @@ A demo-stage GPT-4 chatbot built for a supply chain company using AI voice agent
 * 📚 **Message history persisted in SQLite via Prisma**
 * 🤖 **Hardcoded responses for company-specific FAQs**
 * 🧠 **GPT-4 fallback for unseen queries with recent message context**
-* 📄 **Supports design documentation and technical interviews**
-* 🎯 **Optimized for take-home challenges and demo presentations**
 
 ---
 
