@@ -134,7 +134,6 @@ For unseen queries, we query GPT-4 using the last 5 user-assistant messages from
 
 ## 📉 Known Limitations
 
-* No phone validation (e.g. via `libphonenumber-js`)
 * No frontend chat history display
 * No login/authentication layer
 * No rate-limiting or abuse protection
@@ -142,9 +141,8 @@ For unseen queries, we query GPT-4 using the last 5 user-assistant messages from
 ## 🚀 Future Improvements
 
 * Add frontend memory and chat history view
-* Normalize phone numbers using libphonenumber
-* Support multi-session user login + JWT
 * Extend GPT with retrieval-augmented generation (RAG)
+* Extend GPT to utilize custom service data and user chat history for personalized experience 
 * Use Redis for context caching + speed
 * Migrate to PostgreSQL on production
 * Add analytics and feedback for admin
