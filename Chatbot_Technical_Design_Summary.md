@@ -9,14 +9,14 @@
 - GPT-4 was integrated to handle unseen queries under the assumption that API usage would remain within reasonable limits.
 - No caching, session state, or chat memory has been implemented; all interactions are stateless.
 - Security, cost estimation, and infrastructure reliability were not prioritized, given the prototype’s scope.
-- Non-functional enhancements (e.g., GPT-4 integration) were added to align the app with Cayu.ai’s GenAI focus.
+- Non-functional enhancements (e.g., GPT-4 integration) were added to align the app with AI startup's GenAI focus.
 
 ## 2. Design Decisions & Technical Approach
 - Used a unified Next.js codebase to handle both frontend (React) and backend (API routes).
 - Prisma ORM was integrated with SQLite to enable clean schema management and rapid local development.
 - Users are onboarded via phone number and name; returning users are greeted by name, new users are prompted to provide their name.
 - Known queries are handled using hardcoded logic for deterministic responses.
-- Unrecognized questions are routed to GPT-4 via OpenAI’s API, with a system prompt tailored to Cayu.ai’s domain.
+- Unrecognized questions are routed to GPT-4 via OpenAI’s API, with a system prompt tailored to AI startup's domain.
 - The app maintains no conversational memory; each interaction is handled independently.
 - The architecture is designed to be extensible toward RAG-based enhancements in the future.
 
@@ -27,7 +27,7 @@
 4. The user asks a question.
 5. The backend checks for a match in predefined hardcoded queries.
 6. If matched, a pre-written response is returned.
-7. If unmatched, the query is sent to GPT-4 with a Cayu-specific system prompt.
+7. If unmatched, the query is sent to GPT-4 with a AI startup-specific system prompt.
 8. GPT-4’s response is relayed to the frontend.
 9. All processing happens locally, with no external infrastructure.
 
